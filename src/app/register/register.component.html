@@ -1,0 +1,31 @@
+<div class="container my-3">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header text-center text-white bg-dark">
+                    <h5>Register</h5>
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="form-group container-fluid h-100">
+                            <input type="text" class="form-control my-1" placeholder="username" name="usernameR" id="usernameR" [(ngModel)]="usuario.username">
+                            <input type="nombre" class="form-control my-1" placeholder="nombre" name="nombre" id="nombre" [(ngModel)]="usuario.nombre">
+                            <input type="apellido" class="form-control my-1" placeholder="apellido" name="apellido" id="apellido" [(ngModel)]="usuario.apellido">
+                            <input type="text" class="form-control my-1" placeholder="identificacion" name="identificacion" id="identificacion" [(ngModel)]="usuario.identificacion">
+                              
+                                <div class="row w-100">
+                                    <div class="col text-center my-1">
+                                        <button class="btn btn-success center-block" (click)="register()">Register</button>
+
+                                        <button class="btn btn-primary center-block" [routerLink]="['/Login']">Volver</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

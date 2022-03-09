@@ -1,0 +1,26 @@
+<div class="container my-3">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header text-center text-white bg-dark">
+                    <h5>Login</h5>
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="form-group container-fluid h-100">
+                            <input type="text" class="form-control my-1" placeholder="username" name="username" id="username" [(ngModel)]="vusername">
+
+                                <div class="row w-100">
+                                    <div class="col text-center my-1">
+                                        <button class="btn btn-dark center-block" (click)="login()">Login</button>
+                                        <button class="btn btn-dark center-block" [routerLink]="['/Register']">Registrar</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
